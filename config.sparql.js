@@ -68,13 +68,13 @@ module.exports = {
   sparqlProxy: {
     path: '/sparql',
     options: {
-      endpointUrl:'http://localhost:3030/tbbt/sparql'
+      endpointUrl:'http://104.197.49.154:3030/penny/sparql'
     }
   },
   sparqlSearch: {
     path: '/query',
     options: {
-      endpointUrl:'http://localhost:3030/tbbt/sparql',
+      endpointUrl:'http://104.197.49.154:3030/penny/sparql',
       resultsPerPage: 5,
       queryTemplate: fs.readFileSync(path.join(__dirname, 'data/sparql/search.sparql')).toString(),
       variables: {
@@ -87,7 +87,7 @@ module.exports = {
   },
   HandlerClass: require('./lib/sparql-handler'),
   handlerOptions: {
-    endpointUrl: 'http://localhost:3030/tbbt/sparql',
+    endpointUrl: 'http://104.197.49.154:3030/penny/sparql',
     buildQuery: buildQuery,
     buildExistsQuery: buildExistsQuery
   }
