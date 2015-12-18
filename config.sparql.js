@@ -87,7 +87,7 @@ module.exports = {
   },
   HandlerClass: require('./lib/sparql-handler'),
   handlerOptions: {
-    endpointUrl: 'http://104.197.49.154:3030/penny/sparql',
+    endpointUrl: 'http://104.197.49.154:3030/fuzzy-logic-data/sparql',
     buildQuery: buildQuery,
     buildExistsQuery: buildExistsQuery
   }
