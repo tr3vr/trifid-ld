@@ -68,13 +68,13 @@ module.exports = {
   sparqlProxy: {
     path: '/sparql',
     options: {
-      endpointUrl:'http://104.197.49.154:3030/penny/sparql'
+      endpointUrl:'http://104.197.49.154:3030/fuzzy-logic-data/sparql'
     }
   },
   sparqlSearch: {
     path: '/query',
     options: {
-      endpointUrl:'http://104.197.49.154:3030/penny/sparql',
+      endpointUrl:'http://104.197.49.154:3030/fuzzy-logic-data/sparql',
       resultsPerPage: 5,
       queryTemplate: fs.readFileSync(path.join(__dirname, 'data/sparql/search.sparql')).toString(),
       variables: {
